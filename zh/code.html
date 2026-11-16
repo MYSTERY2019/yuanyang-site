@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Code · Yuanyang</title>
+<meta name="description" content="FateLens 知命以及两个小工具，都是下班写的。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Code · Yuanyang">
+<meta property="og:url" content="https://yuanyang.loc.cc/zh/code.html">
+<meta property="og:image" content="https://yuanyang.loc.cc/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://yuanyang.loc.cc/assets/og.jpg">
+<link rel="alternate" hreflang="en" href="https://yuanyang.loc.cc/code.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://yuanyang.loc.cc/zh/code.html">
+<link rel="alternate" hreflang="x-default" href="https://yuanyang.loc.cc/code.html">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../styles.css?v=6">
+<style>
+.lead-proj{display:block;margin:0 0 clamp(56px,7vw,96px)}
+.lead-proj h2{font-size:clamp(38px,5vw,72px);line-height:.95;letter-spacing:-.02em;
+              margin:0 0 clamp(20px,3vw,34px)}
+.lead-proj .two,.small-projs{display:grid;
+                grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);
+                gap:clamp(24px,5vw,88px);align-items:start}
+.lead-proj .two p{margin:0 0 1em;max-width:46ch}
+.stack{font-size:14px;color:var(--muted);margin:0}
+.small-projs article h2{font-size:clamp(24px,2.4vw,34px);margin:0 0 12px}
+.small-projs article p{margin:0 0 .9em;max-width:46ch}
+.go{font-size:15px}
+@media (max-width:820px){
+  .lead-proj .two,.small-projs{grid-template-columns:1fr}
+  /* 手机端：FateLens 与两个小项目、以及两个小项目之间，用同一档间距 */
+  .lead-proj{margin-bottom:24px}
+  .small-projs{row-gap:24px}
+}
+</style>
+</head>
+<body>
+  <header class="top wrap">
+    <div class="brand">
+      <p class="wordmark"><a href="index.html">Yuanyang</a></p>
+    <p class="lang" aria-label="Language">
+      <a href="../code.html" lang="en">EN</a><span class="sep" aria-hidden="true">·</span><a href="code.html" aria-current="true" lang="zh-Hans">中文</a>
+    </p>
+    </div>
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html" class="nav-home">Home</a>
+        <a href="practice.html">Practice</a>
+        <a href="code.html" aria-current="page">Code</a>
+        <a href="music.html">Music</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+  </header>
+  <main class="wrap">
+    <h1 class="visually-hidden">Code</h1>
+    <p class="lede rise">FateLens 知命以及两个小工具，都是下班写的。</p>
+    <div class="band rise">
+      <p><b>3</b><span>个工具</span></p>
+      <p><b>1</b><span>个已上线产品</span></p>
+      <p><b>2</b><span>个小插件</span></p>
+    </div>
+
+    <article class="lead-proj rise">
+      <h2>FateLens</h2>
+      <div class="two">
+        <div>
+          <p>一个结合 AI 的八字和紫微斗数排盘工具，除 AI 问答外，计算全部在手机本地完成。不联网、不上传生辰数据，整个引擎都在设备上。</p>
+          <p>四柱、十神、藏干一屏看全；点柱看细项，点宫看星曜和四化。内置上千个城市的地理信息，按出生地经度计算真太阳时，确保最准确的命理学推演。</p>
+          <p class="stack">Android / 网页版 · fatelens.cc.cd</p>
+        </div>
+        <div>
+          <p>大运流年一路排到流日流时，配一行断语和七章解读，帮助您全面了解专属于自己的命理。合盘按日干日支、五行与紫微星曜的配合打分；结合 AI 服务，可以回答任何您关注的命理学问题。</p>
+          <p>排盘免费，AI 问答每日亦有免费额度，提供安卓 APP 和网页版。</p>
+          <p class="go"><a href="https://fatelens.cc.cd">打开 FateLens ↗</a></p>
+        </div>
+      </div>
+    </article>
+
+    <div class="small-projs rise">
+      <article>
+        <h2>Loomy2API</h2>
+        <p>一个使用 Go 语言撰写的 CPAMC 插件，主要用来将多个 Loomy 账号集合成一个账号池，并将其转化为统一的、适配 OpenAI 格式的接口。中英双语控制台。</p>
+        <p class="stack">Go · 网关</p>
+        <p class="go"><a href="https://github.com/MYSTERY2019/Loomy2api-CPAMC">打开 Loomy2API ↗</a></p>
+      </article>
+      <article>
+        <h2>DSH-Skills-Symlink</h2>
+        <p>一个适用于 DeepSeek Harness 的技能管理插件，让技能库实现中央管理、各个 project 分别加载，平滑实现 Hermes 上的 Symlink 功能。</p>
+        <p class="stack">Node.js · DeepSeek Harness 插件</p>
+        <p class="go"><a href="https://github.com/MYSTERY2019/dsh-skills-symlink">打开 DSH-Skills-Symlink ↗</a></p>
+      </article>
+    </div>
+  </main>
+</body>
+</html>

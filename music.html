@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Music · Yuanyang</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Music · Yuanyang">
+<meta property="og:url" content="https://yuanyang.loc.cc/music.html">
+<meta property="og:image" content="https://yuanyang.loc.cc/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://yuanyang.loc.cc/assets/og.jpg">
+<link rel="alternate" hreflang="en" href="https://yuanyang.loc.cc/music.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://yuanyang.loc.cc/zh/music.html">
+<link rel="alternate" hreflang="x-default" href="https://yuanyang.loc.cc/music.html">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css?v=6">
+<style>
+.music{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);
+       gap:clamp(28px,4.5vw,80px);align-items:start}
+.music .left{display:flex;flex-direction:column;gap:clamp(16px,2.4vh,28px)}
+.music h1{font-size:clamp(38px,5.2vw,74px);line-height:.98;letter-spacing:-.03em;margin:0}
+.music .sub{font-size:17px;color:var(--muted);margin:0}
+.music .story{max-width:46ch;margin:0}
+.music .credits{margin:clamp(20px,4vh,52px) 0 0;font-size:15px;color:var(--muted)}
+.music .credits p{margin:0;line-height:1.75}
+.music .credits a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.sleeve{margin:0}
+.sleeve img{display:block;width:100%;height:auto}
+.music .p2-btn{background:var(--red);border-color:var(--red);color:var(--paper)}
+.music .p2-btn:hover,.music .p2-btn:focus-visible{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+@media (max-width:880px){
+  .music{grid-template-columns:1fr}
+  .sleeve{order:-1}
+}
+</style>
+</head>
+<body>
+  <header class="top wrap">
+    <div class="brand">
+      <p class="wordmark"><a href="index.html">Yuanyang</a></p>
+    <p class="lang" aria-label="Language">
+      <a href="music.html" aria-current="true" lang="en">EN</a><span class="sep" aria-hidden="true">·</span><a href="zh/music.html" lang="zh-Hans">中文</a>
+    </p>
+    </div>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" class="nav-home">Home</a>
+        <a href="practice.html">Practice</a>
+        <a href="code.html">Code</a>
+        <a href="music.html" aria-current="page">Music</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+  </header>
+  <main class="wrap">
+    <div class="music">
+      <div class="left">
+        <h1 class="rise">写给小陈皮</h1>
+        <p class="sub rise">For Xiao Chenpi · 4:12 · written for our fourth anniversary</p>
+        <div class="player2 rise" data-src="assets/xiao-chenpi-web.mp3" data-label="For Xiao Chenpi">
+          <span class="p2-time">0:00 / 4:12</span>
+          <button class="p2-btn" type="button" aria-label="Play For Xiao Chenpi">&#9654;</button>
+          <div class="p2-track"><input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek"></div>
+        </div>
+        <p class="story rise">One song so far. A gymnasium in summer, a mountain we still owe each other, a cat asleep on the windowsill, and the long way from Guangshan to Shanghai.</p>
+        <div class="credits rise">
+          <p>Lyrics: Yuanyang, DeepSeek &amp; Gemini</p>
+          <p>Created by <a href="https://suno.com">Suno</a></p>
+        </div>
+      </div>
+      <figure class="sleeve rise">
+        <img src="assets/xiao-chenpi-cover.jpg" alt="Cover artwork for the song" width="1280" height="1280">
+      </figure>
+    </div>
+    <script src="assets/player.js" defer></script>
+  </main>
+</body>
+</html>
